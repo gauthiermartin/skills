@@ -51,7 +51,6 @@ It avoids maintaining a Node or Python installer. Revisit a small Python install
 
 - The `foundry-*` skills are adapted from [Matt Pocock's skills](https://github.com/mattpocock/skills), their source of inspiration and the revisions recorded in each skill's frontmatter.
 - The cited `anvil-obsidian-*` research skills are adapted from [Paul Iusztin's AI Research OS workshop](https://github.com/iusztinpaul/ai-research-os-workshop).
-- `anvil-develop-skills` was informed by [Anthropic's skill-creator](https://github.com/anthropics/skills/blob/main/skills/skill-creator). No upstream text or assets are redistributed; its Apache-2.0 license applies if future work copies or adapts that source.
 - `NOTICE` preserves both upstream MIT notices; `LICENSE` covers this repository's original contributions.
 
 ## Deferred

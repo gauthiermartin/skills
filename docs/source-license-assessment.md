@@ -16,7 +16,6 @@ This repository retains copied and adapted code from two MIT-licensed upstream r
 
 Both upstreams are licensed under the **MIT License**. The downstream repository intends to use the MIT License as well.
 
-**Additional source reviewed:** `anthropics/skills`' `skill-creator` was used as an authoring reference. The local `anvil-develop-skills` skill has no Anthropic provenance declaration, and a comparison against the pinned upstream version found no shared normalized lines or five-word phrases. It is treated as independently authored inspiration, not redistributed Apache-2.0 content.
 
 **Compatibility:** ✓ **MIT-to-MIT is compatible.** Adapted MIT-licensed material may be relicensed under MIT downstream with proper attribution preserved.
 
@@ -292,11 +291,9 @@ This repository may lawfully retain and distribute the copied and adapted conten
 ## 8. Post-assessment updates
 
 - The root `NOTICE` now preserves the complete MIT notices for `mattpocock/skills` and `iusztinpaul/ai-research-os-workshop`; this fulfills the report's recommended shared-notice action.
-- `anvil-develop-skills` was compared with `anthropics/skills`' `skill-creator` at commit `9d2f1ae187231d8199c64b5b762e1bdf2244733d`. No copied expression was identified, so its Apache-2.0 `LICENSE.txt` is not redistributed here. The README credits it as inspiration only.
-- If future work copies or adapts `skill-creator`, retain its Apache-2.0 license, all applicable notices, and a prominent modification notice in the affected files. See [the upstream license](https://github.com/anthropics/skills/blob/main/skills/skill-creator/LICENSE.txt).
 
 ---
 
 **Report prepared:** 2026-07-14  
-**Primary sources verified:** https://github.com/mattpocock/skills/blob/main/LICENSE, https://github.com/iusztinpaul/ai-research-os-workshop/blob/main/LICENSE, https://github.com/anthropics/skills/blob/main/skills/skill-creator/LICENSE.txt  
+**Primary sources verified:** https://github.com/mattpocock/skills/blob/main/LICENSE, https://github.com/iusztinpaul/ai-research-os-workshop/blob/main/LICENSE  
 **Not legal advice.**
