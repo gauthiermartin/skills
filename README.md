@@ -1,3 +1,7 @@
+<p align="center">
+  <img src="assets/logo.webp" alt="An anvil and hammer in a glowing foundry" width="360">
+</p>
+
 # Personal Agent Skills
 
 Portable [Agent Skills](https://agentskills.io/specification.md), versioned here and installed into coding agents from one canonical source.
@@ -42,6 +46,13 @@ npx skills@latest add gauthiermartin/skills
 ```
 
 It avoids maintaining a Node or Python installer. Revisit a small Python installer only if OMP or a future target needs installation behavior that this tool cannot provide.
+
+## Sources and attribution
+
+- The `foundry-*` skills are adapted from [Matt Pocock's skills](https://github.com/mattpocock/skills), their source of inspiration and the revisions recorded in each skill's frontmatter.
+- The cited `anvil-obsidian-*` research skills are adapted from [Paul Iusztin's AI Research OS workshop](https://github.com/iusztinpaul/ai-research-os-workshop).
+- `anvil-develop-skills` was informed by [Anthropic's skill-creator](https://github.com/anthropics/skills/blob/main/skills/skill-creator). No upstream text or assets are redistributed; its Apache-2.0 license applies if future work copies or adapts that source.
+- `NOTICE` preserves both upstream MIT notices; `LICENSE` covers this repository's original contributions.
 
 ## Deferred
 
