@@ -32,6 +32,18 @@ A model-invoked **description** does two jobs — state what the skill is, and l
 - **One trigger per branch.** Synonyms that rename a single branch are **duplication** — "build features using TDD … asks for test-first development" is one branch written twice. Collapse them; keep only genuinely distinct branches.
 - **Cut identity that's already in the body.** Keep the description to triggers, plus any "when another skill needs…" reach clause.
 
+## Provenance
+
+Give every new skill a `metadata:` block recording where it came from — human-facing provenance only; it plays no part in invocation:
+
+```yaml
+metadata:
+  origin: gauthiermartin/skills   # repo it came from
+  origin-status: local            # local | adapted | verbatim
+```
+
+Skills imported from elsewhere also record `origin-path` (file within the origin repo) and `origin-revision` (commit, or `unknown`) — this skill's own frontmatter is a live example.
+
 ## Directory layout
 
 Every skill requires only its directory and `SKILL.md`. Add a conventional subdirectory only when its file role requires it:
