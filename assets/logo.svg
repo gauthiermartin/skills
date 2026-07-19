@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 360 360" width="360" height="360">
+  <style>
+    .card { fill: #ffffff; stroke: #1a1f2e; }
+    .glyph { stroke: #4f46e5; }
+    .dot { fill: #4f46e5; }
+    @media (prefers-color-scheme: dark) {
+      .card { fill: #161b26; stroke: #e8eaf0; }
+      .glyph { stroke: #818cf8; }
+      .dot { fill: #818cf8; }
+    }
+  </style>
+  <!-- back card -->
+  <g transform="rotate(-14 180 200)">
+    <rect class="card" x="105" y="90" width="150" height="200" rx="18" stroke-width="7"/>
+  </g>
+  <!-- middle card -->
+  <g transform="rotate(-2 180 200)">
+    <rect class="card" x="105" y="80" width="150" height="200" rx="18" stroke-width="7"/>
+  </g>
+  <!-- front card with prompt glyph -->
+  <g transform="rotate(10 180 200)">
+    <rect class="card" x="105" y="70" width="150" height="200" rx="18" stroke-width="7"/>
+    <path class="glyph" d="M138 140 L168 165 L138 190" fill="none" stroke-width="12" stroke-linecap="round" stroke-linejoin="round"/>
+    <line class="glyph" x1="180" y1="196" x2="222" y2="196" stroke-width="12" stroke-linecap="round"/>
+  </g>
+</svg>
