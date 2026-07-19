@@ -28,24 +28,17 @@ Skills live directly beneath this directory; do not nest categories because OMP 
 
 ## Installation strategy
 
-This repository is the source of truth; it does not ship an installer yet.
-
-For local development, link each skill directory into:
-
-| Agent | Target |
-| --- | --- |
-| OMP | `~/.agents/skills/<skill-name>` |
-| Claude Code | `~/.claude/skills/<skill-name>` |
-
-Both locations use the same `SKILL.md` directory layout. Link rather than copy so future edits stay synchronized.
-
-For public multi-agent distribution, use the existing `skills` installer first:
+This repository is the **Canonical Source** (see `CONTEXT.md` for the full vocabulary; `docs/adr/0001` for the reasoning). Skills are *copied* — not symlinked — into the **Installed Set** at `~/.agents/skills`, selectively per machine, and reconciled by a three-way sync:
 
 ```sh
-npx skills@latest add gauthiermartin/skills
+uv run scripts/skills-sync.py            # Textual TUI: install/remove/adopt, resolve conflicts
+uv run scripts/skills-sync.py status     # per-skill state (--json for agents)
+uv run scripts/skills-sync.py sync       # one-sided changes flow; conflicts reported — inspect with `diff <name>`, resolve with `accept`
 ```
 
-It avoids maintaining a Node or Python installer. Revisit a small Python installer only if OMP or a future target needs installation behavior that this tool cannot provide.
+Agent surfaces hold no content: `~/.claude/skills` is a single directory symlink to the Installed Set. Migrating from the old symlink-per-skill layout is `uv run scripts/skills-sync.py cutover` (dry-run by default, `--apply` to execute; backs up `~/.claude/skills` first).
+
+For public multi-agent distribution, `npx skills@latest add gauthiermartin/skills` still applies.
 
 ## Sources and attribution
 
