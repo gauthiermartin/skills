@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="assets/logo.webp" alt="An anvil and hammer in a glowing foundry" width="360">
+  <img src="assets/logo.svg" alt="Personal Agent Skills — a fanned deck of skill cards with a terminal prompt" width="360">
 </p>
 
 # Personal Agent Skills
@@ -49,11 +49,9 @@ It avoids maintaining a Node or Python installer. Revisit a small Python install
 
 ## Sources and attribution
 
-- The `foundry-*` skills are adapted from [Matt Pocock's skills](https://github.com/mattpocock/skills), their source of inspiration and the revisions recorded in each skill's frontmatter.
-- The cited `anvil-obsidian-*` research skills are adapted from [Paul Iusztin's AI Research OS workshop](https://github.com/iusztinpaul/ai-research-os-workshop).
+- Skills adapted from [Matt Pocock's skills](https://github.com/mattpocock/skills) and [Paul Iusztin's AI Research OS workshop](https://github.com/iusztinpaul/ai-research-os-workshop) record their origin in each skill's `metadata:` frontmatter (`origin`, `origin-path`, `origin-revision`, `origin-status`).
 - `NOTICE` preserves both upstream MIT notices; `LICENSE` covers this repository's original contributions.
 
 ## Deferred
 
-- Existing skills remain untouched in `~/.agents/skills`.
 - No Node package, Python package, Claude Code plugin, or tool-specific adapters are included.
